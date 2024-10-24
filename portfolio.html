@@ -1,0 +1,178 @@
+                                                                    <!doctype html>
+                                                                    <html lang="en">
+                                                                      <head>
+                                                                        <meta charset="utf-8">
+                                                                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                                        <title>MY PORTFOLIO</title>
+
+                                                                    <!--      link to bootstrap-->
+                                                                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+                                                                     <link rel="stylesheet" href="style.css">
+                                                                      </head>
+                                                                      <body>
+
+                                                                    <!--    start of navigation bar-->
+                                                                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                                                                      <div class="container-fluid">
+                                                                        <a class="navbar-brand" href="#">
+                                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAZlBMVEX///8BAQEAAAD8/Pz4+PicnJx1dXWurq4FBQUmJiaXl5cjIyO2traMjIzQ0NA1NTXr6+vy8vLDw8O8vLxra2sXFxfl5eUwMDAeHh5KSkqGhoY9PT1TU1NcXFzb29vJycl9fX2lpaV9H4RRAAAJjElEQVR4nO2cjZaiPAyGNUVAFKTyJyII93+TX1N+Cy2jOwLOd/qc3dmdXdS+JE3TNMxup9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaD4E9a4tBdl6ML/EP2RRSxr8cTXPCHpSf+vh/A4L9h0A8dbD+RWG04sBG65bj+dXFNnAMnsIyZ+dNWzkZ2aOTouNfqZUUzhpkoVnuuYI3yKOhmJgDw/FhcRL2yjhfKkcPwRbFAOW9EJS4WVgo/EgL1Ye5s8wH/NLNrT9EPb92ZBcWwG3IF7O1D/i75tZhclutQgbsn2YxmfvhhYEOLEvNvubuaUYsqNWhbe8HwTxqgwmYvC+Q3jGvGYwXiPkVgmrwHIzLmvDEM4c6g4QuV73LzS4p2MXa/yM/Ypy9zm89wWf+He0mBGk6HGpOugtDr3zyZ3eAz4g7xAmAMLcHxkHMtPvjXPAS8Pa+4iFARDIRmqYj93ZsFENJOkjzx9ZxK0ildIFgqx/B+5lbZiLWQTcw2YBjd5bh+pTSrWOJhDsoXfKDF/RThMD323wn+uCWhqHYu7CHeknLRjVoOre4YHagvbtSvzuuYWbEULdoSGg+/KDmqGYErU5fP0hO5YKMDH+JnOGOI053qQTwwYdsKUSbk/+LfdZgA2UsKFQe7qYvCUGBZxQTXqNqV/cMQyCu41h6E3tVHMRjeU13YCJWQfD3DUzlAW3jXak5KAOXTbUi4qUwYCvF0wx6yv5n/JsdAX8XCWmzrfAznKzNEeE92tjGLJ7JnzaQXsHwJFt4fDf4rPjugdrwc13IDcNX0Th4QReEfsTYto5GduMwr5dnXDhtQzZjCFsC54f8apT7izmhvFjKobnvmA7hS9J+NvB1V+LB2qxW3+8ONLqGrNLnHaFHjtfalFlC810trChRRV9ISTFOTesjYlmEXix4jUsZ0KrcAvil8dSaqyxGH73XLp7Ib7SkA+O/TL9ZtQKUhCCibmQp00mDfvQRyEOjNDnWcIhq30M2qS5f4HI7mDjZdHDcZi32cIytagY5tP3cVHCv6hCdC1e3PcTFrZG8Kmf8QTueURd+TIxbSSGzZbD5BoLc9Fu/MPcmq+XbAoMzEiraCqaKT6eucF2T/7dcwktpBoZxpZ4gKNOethAU2Fg0zpIc1neCs5RzHkJMeyzxQ+1JNPYmdupHUUtbKsn20QAlO37HnBFqpRR/xcUyeCT2dR0ZRdV0vE1d3xQvsByQiQphIhiqqXEEDEyQyj9jEKZo419jGmR56eCm0G/m/skfiqUxrNYWhsnHsuqZDhPofxMy3pLIQt7cGoS0OtCAYCHluHdU94vQ4HwZqSZ++xreBBIBqE5wn3CAqGZ4F5kIKb8XdW75OUE2E9j1cHmO53UdVMb6qL15/dvnmAY+3eFiBDqzQAaePw+KXA17UJlfrxKwNLyTBDjqgzzyiGTwX2Mlzwlawi98J3bvl4/lzgpMFzh/OWmnDFsOqgmTQuulTwkw1G604zzqEsfQu/zTua7IIgZZ4sDvOowj5NDXdGFi0wLG7tRV30hCQ/0o1rwvYyn2SZYTShzlNfHykRTjL6o5awcqB9UjlMFn49j8dXNxBwKLup1TJ0BjFfGi/Xzyv5Rs5CdZeZ4r4W0Yy70S3ajMil7SGQna0tCdkEEMMlswVS/xH3NMizLX7v6R/ghxNRDSvVLKmEbA8q/bVExkxRk9rgnU97W+JX53+ZbpF+V1miCkFWXcHlQf7RRjTfCE6pBxeV6T5PMvL5UFFlADJu7M0n5i0OqLzOux8ZSJ2uFDgepmMuHzoi7Ex+UY9LFXU3qZh8S05zEcUEsFQsXt83bbvYGVtPhENXpjXwb/klUAWCGHxPNGlLk3CqlFZzLGzraZenDWqkYSbmsl3IeH2ooKHPeB8AnPrUSFLasaVSL5l39Eu/22kLD108bwuaDeINBvuisIVjEhEkJZa5/x/mxNUB4p2bx5GUsSBftcGA7rXPW3MXhEGYTzdey5trEUNuCELaR3UO2SCFWpAij0RZgJpy9I4apaY83KIpJV2nX8HJRzMzmrHp9ygwbac43rKqv00BslLB/bdtM8+T4GhFfXGrT+A+eBKyihWEKNYCT2s/o2XoNN8GzpNSLqc8tD9FCx0pTjFQoNU0OmVpeT69oyX3NDu9mwo+fl43MAmJ19qgKPG/kil5f7uNn0CvEsgZihIKaX5ZnOc/LsH9tWttcjHHh3L7KM3Z1Gi/5D+9RRzVMzNazC+JnwxoNJL504HN315j8Jw3qMltWzbTbLwGxxHb/UDI47BeKTlJu6TTXxuolfV6fPlmnCDCguAh+xtPNyQieM4tkssZG/0XYzlBIA/BoRXJAq0hncIlMV677zWGN+wAkRUllbsa7LczvUSM2NWC7fzUJ0ErL8PMY2/0aNeMODZaBuOMkLVBnlSj/tMih/r8gaQSywyt/dqGbO/SeXSSc6t4ZGxLrS2KANRaDnpONjGN4Uix8Jo2fMAXFNdj+sVRD1krCjJMO5agGSc7cOMw2WZpdsjSsPnso9i6xvOMUO01NRTJCcC1s+horuzt4RW7hqFNtXZ6qWgUbWpTUT/7MUQ5LI+w1J287MXOtwG3IumVpmmYYApIkYSnM7daXXLBuBV1/CS8mbvW8CZlr0h6cJUnog3Hdmn27ZJdb/cjZRg83EvpWQWzog13jQsE3Y5lFd8Y54zdgo6dnCI3+VUzVzgxsvuNux74vUlRTbvSMFnmvVimIaThiA21XXOJ59GYBoGyykn8WA8NCH24ohvNpZfCxxm6vadd1tJ+fObO7Qh9BMY82ghUPMTisDdqmu9/N7v0FMd0s5z0m7ambF21qGbKjZh9wH2HeN+0rHIz/OnYrI3esQ5sQcKfbMqPBehOukGXBT7+oxbtqFJ3MdUv/4KjSwchs15H6yaXOnFqtQYjjGzxr4IW2yjSY5dyHjyUY9Z0wC1qY9V+3/lEbZxPrzI2v4B/+PZE/3Awp9i0NmjB2LvRPYNj8KcetdwJT8Cmh8U7HZlaZJCsk572Z0My18At/oAvhgxzbxT5IcmKKTtlcEJlbO5kM5kg0F0sd7Lcj0UJ2/uHRuFl6+EK71AgFQtSj/IEghXUP8/Beed83XWoIER9HsTEfVg6WxkX8pT/YpGH4Q3TY7A+/9b6/xKh2u8STFStideEZ/vwPnsLHQ3ouXxupXoO6t57VW2M/C+6Ez0HDH7eLRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wj+n/wHtqt6AusVu2wAAAAASUVORK5CYII=" alt="logo" width="50">
+                                                                        </a>
+                                                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                                          <span class="navbar-toggler-icon"></span>
+                                                                        </button>
+                                                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                                            <li class="nav-item">
+                                                                              <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                              <a class="nav-link" href="#">SKILLS</a>
+                                                                            </li>
+                                                                              <li class="nav-item">
+                                                                              <a class="nav-link active" aria-current="page" href="#">TESTIMONIALS</a>
+
+
+                                                                            <li class="nav-item dropdown">
+                                                                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                PROJECTS
+                                                                              </a>
+                                                                              <ul class="dropdown-menu">
+                                                                                <li><a class="dropdown-item" href="#">WEB DEVELOPMENT</a></li>
+                                                                                <li><a class="dropdown-item" href="#">APP DEVELOPMENT</a></li>
+                                                                                  <li><a class="dropdown-item" href="#">MACHINE LEARNING </a></li>
+                                                                                <li><a class="dropdown-item" href="#">DEEP LEARNING</a></li>
+                                                                                <li><a class="dropdown-item" href="#">DATA  ENGINEERING</a></li>
+                                                                              </ul>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                              <a class="nav-link " aria-disabled="true">CONTACT</a>
+                                                                            </li>
+                                                                          </ul>
+                                                                          <form class="d-flex" role="search">
+                                                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                                                          </form>
+                                                                        </div>
+                                                                      </div>
+                                                                    </nav>
+                                                                    <!--end of navigation bar-->
+                                                                    <!--slider begins here-->
+                                                                    <div id="carouselExampleCaptions" class="carousel slide">
+                                                                      <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                                      </div>
+                                                                      <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                          <img src="IMG_8592.jpg" class="d-block w-100" alt="logo" width="2">
+                                                                          <div class="carousel-caption d-none d-md-block">
+                                                                            <h5>SAFARICOM WOMEN IN TECHNOLOGY HACKATHON</h5>
+                                                                            <p>ITS A WIN.</p>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                          <img src="https://www.emobilis.ac.ke/images/sliders/slide_5.jpg" class="d-block w-100" alt="logo"  width="30">
+                                                                          <div class="carousel-caption d-none d-md-block">
+                                                                            <h5>PRESENTATION AT ABSA BANK HACKATHON</h5>
+                                                                            <p>ACHIEVEMENT.</p>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                          <img src="https://www.emobilis.ac.ke/images/sliders/slide_7.jpg" class="d-block w-100" alt="logo" width="30">
+                                                                          <div class="carousel-caption d-none d-md-block">
+                                                                            <h5>AFRICA'S TALKING WOMEN IN TECH HACKATHON</h5>
+                                                                            <p>ITS A WIN.</p>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                      </button>
+                                                                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <!--slider ends here-->
+
+                                                                    <!--Counter starts here-->
+                                                                    <section id="about" class="mb-0">
+                                                                          <h2>ABOUT ME</h2>
+                                                                          <p>Hello! I'm a passionate web developer and data scientist with a knack for creating beautiful and functional web applications.</p>
+                                                                      </section>
+
+
+
+                                                                    <div></div>
+                                                                      <section id="skills" class="mb-0">
+                                                                          <h2>SKILLS</h2>
+                                                                          <div class="skills">
+                                                                              <div class="skill">
+                                                                                  <p><b>HTML</b></p>
+                                                                                  <p>Experienced in creating semantic and accessible HTML.</p>
+                                                                              </div>
+                                                                              <div class="skill" >
+                                                                                  <p><b>CSS</b></p>
+                                                                                  <p>Proficient in styling web pages using CSS and frameworks like Bootstrap.</p>
+                                                                              </div>
+
+                                                                              <section id="skills" class="mb-0">
+                                    <
+                                                                              <div class="skill">
+                                                                                 <p><b>JavaScript</b></p>
+                                                                                  <p>Skilled in building interactive web applications using JavaScript.</p>
+                                                                              </div>
+                                                                            </section>
+
+                                                                      <section id="projects" class="mb-0">
+                                                                          <h2>PROJECTS</h2>
+                                                                          <div class="projects">
+                                                                              <div class="project">
+                                                                                  <p><b>Project1</b></p>
+                                                                                  <p>A web application for tracking tasks and projects.</p>
+                                                                              </div>
+                                                                              <div class="project">
+                                                                                  <p><b>Project2</b></p>
+                                                                                  <p>A data visualization tool for analyzing datasets.</p>
+                                                                              </div>
+                                                                              <div class="project">
+                                                                                  <p><b>Project3</b></p>
+                                                                                  <p>A responsive portfolio website to showcase my work.</p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </section>
+
+                                                                      <section id="testimonials" class="mb-0">
+                                                                          <h2>Testimonials</h2>
+                                                                          <div class="testimonials">
+                                                                              <div class="testimonial">
+                                                                                 <p> <b>- Mercy wanjiru</b></p>
+                                                                                  <p>"Grace is an exceptional web developer!"</p>
+
+                                                                              </div>
+                                                                              <div class="testimonial">
+                                                                                  <p><b>-Lilian</b></p>
+                                                                                  <p>"Grace's data analysis skills are top-notch!"</p>
+
+                                                                              </div>
+                                                                          </div>
+                                                                      </section>
+
+
+                                                                      <section id="contact">
+                                                                          <h2>Contact Me</h2>
+                                                                          <p>If you'd like to get in touch, feel free to reach out via email at grace21ngari@gmail.com</p>
+
+                                                                      </section>
+
+
+
+
+
+                                                                    <br><br><br><br>
+                                                                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                                                                      </body>
+                                                                    </html>
